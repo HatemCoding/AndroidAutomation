@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on darwin)" generated="20231127 18:23:06.359" rpa="false" schemaversion="4">
+<suite id="s1" name="Welcome" source="/Users/macos/Documents/AndroidAutomation/TestCases/Welcome.robot">
+<test id="s1-t1" name="Check Welcome Screen Is Displayed" line="6">
+<kw name="Open Test Application" library="InitApp_res">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://0.0.0.0:4723</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>app=${ANDROID_APP}</arg>
+<arg>udid=${ANDROID_UDID}</arg>
+<arg>appPackage=${ANDROID_PACKAGE}</arg>
+<arg>appActivity=${ANDROID_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231127 18:23:06.538" endtime="20231127 18:23:13.090"/>
+</kw>
+<status status="PASS" starttime="20231127 18:23:06.538" endtime="20231127 18:23:13.090"/>
+</kw>
+<kw name="Animation logo is displayed" library="WelcomeScreen_res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Locator_Animation}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231127 18:23:13.253" level="INFO">criteria is com.coretechfitness.tempo:id/videoViewSplash</msg>
+<status status="PASS" starttime="20231127 18:23:13.091" endtime="20231127 18:23:13.253"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Locator_Animation}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231127 18:23:13.999" level="INFO">criteria is com.coretechfitness.tempo:id/videoViewSplash</msg>
+<status status="PASS" starttime="20231127 18:23:13.253" endtime="20231127 18:23:13.999"/>
+</kw>
+<status status="PASS" starttime="20231127 18:23:13.091" endtime="20231127 18:23:13.999"/>
+</kw>
+<kw name="Welcome screen is displayed" library="WelcomeScreen_res">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Locator_Welcome_Screen_Title}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231127 18:23:18.170" level="INFO">criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle
+criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle</msg>
+<status status="PASS" starttime="20231127 18:23:13.999" endtime="20231127 18:23:18.170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${Locator_Welcome_Screen_Title}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231127 18:23:18.277" level="INFO">criteria is com.coretechfitness.tempo:id/tvOnBoardingTitle</msg>
+<status status="PASS" starttime="20231127 18:23:18.170" endtime="20231127 18:23:18.277"/>
+</kw>
+<status status="PASS" starttime="20231127 18:23:13.999" endtime="20231127 18:23:18.277"/>
+</kw>
+<status status="PASS" starttime="20231127 18:23:06.538" endtime="20231127 18:23:18.278"/>
+</test>
+<status status="PASS" starttime="20231127 18:23:06.360" endtime="20231127 18:23:18.278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Welcome">Welcome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
